@@ -324,7 +324,7 @@
       <a href="#" class="arrow-next"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a>
     </div> 
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
@@ -335,6 +335,7 @@ $('.dropdown-toggle').click(function() {
 });
 
 $('.arrow-next').click(function() {
+console.log("fytfyguv");
     var currentSlide = $('.active-slide');
     var nextSlide = currentSlide.next();
     
@@ -344,7 +345,7 @@ $('.arrow-next').click(function() {
     }
     
     currentSlide.fadeOut(600).removeClass('active-slide');
-    nextSlide.fadeIn(600).addclass('active-slide');
+    nextSlide.fadeIn(600).addClass('active-slide');
     
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
